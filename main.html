@@ -13,31 +13,32 @@
     <title>Tic-tac-toe</title>
 </head>
 <body>
-    <div class="credits"><a href="https://github.com/luciavu/tic-tac-toe" target="_blank"><i class="icon-github-circled"></i></div>
+    <div class="credits"><a href="https://github.com/luciavu/tic-tac-toe" target="_blank"><i class="icon-github-circled"></i></a></div>
     <header>
         <div id="game-state">Player 1's Turn</div>
+        <div class="rules">First player to mark a row wins. Click a square to begin. </div>    
     </header>
     <main>
-        <section id="player1">
+        <section id="player1" class="player">
             <input type="text" placeholder="Player 1" id="player1-name">
-            <img src="" alt="player1-icon">
+            <img src="img/player1-idle.jpeg" alt="player1-icon">
         </section>
         <section id="gameboard">
             <div class="grid">
-                <div class="cell" data-index="0"></div>
-                <div class="cell" data-index="1"></div>
-                <div class="cell" data-index="2"></div>
-                <div class="cell" data-index="3"></div>
-                <div class="cell" data-index="4"></div>
-                <div class="cell" data-index="5"></div>
-                <div class="cell" data-index="6"></div>
-                <div class="cell" data-index="7"></div>
-                <div class="cell" data-index="8"></div>
+                <div class="cell" data-index="0">x</div>
+                <div class="cell" data-index="1">x</div>
+                <div class="cell" data-index="2">x</div>
+                <div class="cell" data-index="3">x</div>
+                <div class="cell" data-index="4">x</div>
+                <div class="cell" data-index="5">x</div>
+                <div class="cell" data-index="6">x</div>
+                <div class="cell" data-index="7">x</div>
+                <div class="cell" data-index="8">x</div>
             </div>
         </section>
-        <section id="player2">
+        <section id="player2" class="player">
             <input type="text" placeholder="Player 2" id="player2-name">
-            <img src="" alt="player2-icon">
+            <img src="img/player2-idle.jpeg" alt="player2-icon" class="player2-icon">
         </section>
     </main>
 </body>
