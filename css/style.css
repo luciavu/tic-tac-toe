@@ -17,16 +17,27 @@ a {
     color: black;
 }
 
-.credits {
-    padding: 1rem;
+.menu {
+    padding: 1.5rem;
+    padding-bottom: 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu button {
+    background-color: black;
+    border-radius: 2rem;
+    border: none;
+    color: white;
+    padding: 0.8rem 1.2rem;
+    font-weight: 600;
+    left: 0;
+    cursor: pointer;
 }
 
 .icon-github-circled {
-    font-size: 3rem;
-}
-
-.player2-icon {
-    max-width: 8rem;
+    font-size: 2.5rem;
 }
 
 header {
@@ -50,7 +61,7 @@ main {
     display: flex;
     justify-content: center;
     padding-top: 3rem;
-    gap: 6rem;
+    gap: 5rem;
 
 }
 
@@ -74,6 +85,38 @@ main {
 .player {
     display: flex;
     flex-direction: column;
-    background-color: red;
-    justify-content: center;
+    align-items: center;
+}
+
+.player i {
+    padding: 3.5rem;
+    font-size: 8rem;
+}
+
+.player .edit {
+    font-size: 1rem;
+}
+
+.player input {
+    border: none;
+    background-color: #f9f9f9;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    text-align: center;
+}
+
+.player .stats {
+    font-weight: 600;
+}
+
+.input-container {
+    position: relative;
+}
+
+.input-container i {
+    font-size: 1rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0;
 }
