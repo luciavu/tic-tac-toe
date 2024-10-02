@@ -10,36 +10,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="icon" href="img/favicon.png" type="image/x-icon">
     <script src="script.js" defer></script>
-    <title>Tic-tac-toe</title>
+    <title>Tic Tac Toe</title>
 </head>
 <body>
-    <div class="credits"><a href="https://github.com/luciavu/tic-tac-toe" target="_blank"><i class="icon-github-circled"></i></a></div>
+    <div class="menu">
+        <a href="https://github.com/luciavu/tic-tac-toe" target="_blank">
+            <i class="icon-github-circled"></i>
+        </a>
+        <button onclick="newGame();">New Game</button>
+    </div>
+    
     <header>
         <div id="game-state">Player 1's Turn</div>
         <div class="rules">First player to mark a row wins. Click a square to begin. </div>    
     </header>
     <main>
         <section id="player1" class="player">
-            <input type="text" placeholder="Player 1" id="player1-name">
-            <img src="img/player1-idle.jpeg" alt="player1-icon">
+            <div class="input-container">
+                <i class="icon-pencil"></i>
+                <input type="text" placeholder="Player 1" id="player1-name">
+            </div>
+            <i class="icon-circle-empty"></i>
+            <div class="player1-stats stats">Wins: 0</div> 
         </section>
         <section id="gameboard">
-            <div class="grid">
-                <div class="cell" data-index="0">x</div>
-                <div class="cell" data-index="1">x</div>
-                <div class="cell" data-index="2">x</div>
-                <div class="cell" data-index="3">x</div>
-                <div class="cell" data-index="4">x</div>
-                <div class="cell" data-index="5">x</div>
-                <div class="cell" data-index="6">x</div>
-                <div class="cell" data-index="7">x</div>
-                <div class="cell" data-index="8">x</div>
+            <div class="grid" id="grid">
             </div>
         </section>
         <section id="player2" class="player">
-            <input type="text" placeholder="Player 2" id="player2-name">
-            <img src="img/player2-idle.jpeg" alt="player2-icon" class="player2-icon">
+            <div class="input-container">
+                <i class="icon-pencil"></i>
+                <input type="text" placeholder="Player 2" id="player2-name"> 
+            </div>
+            <i class="icon-cancel-2"></i>
+            <div class="player2-stats stats">Wins: 0</div> 
         </section>
     </main>
+    <footer></footer>
 </body>
 </html>
