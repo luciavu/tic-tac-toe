@@ -202,3 +202,21 @@ main {
 footer {
     height: 2rem;
 }
+
+.cell i {
+    font-size: 2rem;
+}
+
+.winningCombo {
+    color: blue;
+}
+
+.disabled {
+    pointer-events: none; 
+    opacity: 0.5;
+}
+
+
+.menu .highlight {
+    background-color: rgb(58, 58, 255);
+}
