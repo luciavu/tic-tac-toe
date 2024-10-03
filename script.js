@@ -27,21 +27,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const Player = (name, mark) => {
         let winCount = 0;
 
-        const changeName = (newName) => {
-            name = newName;
-        }
+        const changeName = (newName) =>  name = newName;
         
-        const getName = () => {
-            return name;
-        }
+        const getName = () => name;
 
-        const incrementWins = () => {
-            winCount++;
-        }
+        const incrementWins = () => winCount++;
 
-        const getWins = () => {
-            return winCount;
-        }
+        const getWins = () => winCount;
 
         return {mark, changeName, getName, incrementWins, getWins};
     }
@@ -82,9 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         };
 
-        const updateGameState = () => {
-            document.getElementById("game-state").textContent = `${currentPlayer.getName()}'s Turn`;
-        }
+        const updateGameState = () => document.getElementById("game-state").textContent = `${currentPlayer.getName()}'s Turn`;
 
         const resetBoard = () => {
             const grid = document.getElementById("grid");
