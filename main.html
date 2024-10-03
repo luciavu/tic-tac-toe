@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="icon" href="img/favicon.png" type="image/x-icon">
     <script src="script.js" defer></script>
     <title>Tic Tac Toe</title>
 </head>
@@ -17,7 +16,7 @@
         <a href="https://github.com/luciavu/tic-tac-toe" target="_blank">
             <i class="icon-github-circled"></i>
         </a>
-        <button onclick="newGame();">New Game</button>
+        <button id="newGamebtn">New Game</button>
     </div>
     
     <header>
@@ -28,9 +27,9 @@
         <section id="player1" class="player">
             <div class="input-container">
                 <i class="icon-pencil"></i>
-                <input type="text" placeholder="Player 1" id="player1-name">
+                <input type="text" placeholder="Player 1" id="player1-name" class="X">
             </div>
-            <i class="icon-circle-empty"></i>
+            <i class="icon-cancel-2"></i>
             <div class="player1-stats stats">Wins: 0</div> 
         </section>
         <section id="gameboard">
@@ -40,9 +39,9 @@
         <section id="player2" class="player">
             <div class="input-container">
                 <i class="icon-pencil"></i>
-                <input type="text" placeholder="Player 2" id="player2-name"> 
+                <input type="text" placeholder="Player 2" id="player2-name" class="O"> 
             </div>
-            <i class="icon-cancel-2"></i>
+            <i class="icon-circle-empty"></i>
             <div class="player2-stats stats">Wins: 0</div> 
         </section>
     </main>
