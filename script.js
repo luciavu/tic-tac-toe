@@ -59,7 +59,6 @@ document.addEventListener('DOMContentLoaded', () => {
             // Reset gameboard
             Gameboard.reset();
             resetBoard();
-            renderBoard();
             updateGameState();
 
             // Input event listeners
